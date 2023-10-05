@@ -24,7 +24,7 @@ const dados = [
 
 const MySectionList = () => {
     return (
-        <View style={estilos.container}>
+        <View style={estilo.container}>
             <SectionList
                 sections={dados}
                 keyExtractor={(item) => "SDDCeredEDDeed" + item.id}
@@ -47,7 +47,7 @@ const MySectionList = () => {
     )
 }
 
-const estilos = StyleSheet.create({
+const estilo = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center",

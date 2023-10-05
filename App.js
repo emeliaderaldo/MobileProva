@@ -25,7 +25,7 @@ export default function App() {
   );
 }
 
-const estilos = StyleSheet.create({
+const estilo = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: "column",

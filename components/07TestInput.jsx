@@ -6,16 +6,16 @@ const MyTextInput = () => {
     const [frase, setFrase] = useState("")
 
     return (
-        <View style={estilos.View}>
-            <Text style={estilos.header}>Tradutor Emoji</Text>
+        <View style={estilo.View}>
+            <Text style={estilo.header}>Tradutor Emoji</Text>
             <TextInput 
-                style={estilos.input}
+                style={estilo.input}
                 placeholder="Digite uma frase"
                 defaultValue={frase}
                 onChangeText={(textoDigitado)=>setFrase(textoDigitado)}
             />
 
-            <Text style={estilos.frase}>
+            <Text style={estilo.frase}>
                 {
                 frase
                 .split(" ")
@@ -25,7 +25,7 @@ const MyTextInput = () => {
         </View>
     )
 }
-const estilos = StyleSheet.create(
+const estilo = StyleSheet.create(
     {
         header:{
             fontSize:40,

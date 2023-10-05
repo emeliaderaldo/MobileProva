@@ -2,15 +2,15 @@ import { View, Text, SectionList, StyleSheet } from "react-native"
 
 const MyFlexBox = () => {
     return(
-        <View style={estilos.container}>
-            <View style={estilos.View1}></View>
-            <View style={estilos.View2}></View>
-            <View style={estilos.View3}></View>
+        <View style={estilo.container}>
+            <View style={estilo.View1}></View>
+            <View style={estilo.View2}></View>
+            <View style={estilo.View3}></View>
         </View>
     )
 }
 
-const estilos =StyleSheet.create({
+const estilo =StyleSheet.create({
     container:{
         marginTop: 25,
         flex:1,

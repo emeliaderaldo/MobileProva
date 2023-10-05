@@ -8,17 +8,17 @@ const JuntarNomes = () => {
     const [completo, setCompleto] = useState("")
 
     return (
-        <View style={estilos.View}>
-            <Text style={estilos.header}>Descubra seu nome</Text>
+        <View style={estilo.View}>
+            <Text style={estilo.header}>Descubra seu nome</Text>
             <TextInput 
-                style={estilos.input}
+                style={estilo.input}
                 placeholder="Digite seu Nome"
                 defaultValue={Nome}
                 onChangeText={(textoDigitado)=>setNome(textoDigitado)}
             />
 
             <TextInput 
-                style={estilos.input}
+                style={estilo.input}
                 placeholder="Digite seu Sobrenome"
                 defaultValue={Nome2}
                 onChangeText={(textoDigitado)=>setNome2(textoDigitado)}
@@ -36,7 +36,7 @@ const JuntarNomes = () => {
                 />
             </View>
 
-            <Text style={estilos.frase}>
+            <Text style={estilo.frase}>
                 {completo}
                 {/* {
                 frase
@@ -47,7 +47,7 @@ const JuntarNomes = () => {
         </View>
     )
 }
-const estilos = StyleSheet.create(
+const estilo = StyleSheet.create(
     {
         header:{
             fontSize:40,

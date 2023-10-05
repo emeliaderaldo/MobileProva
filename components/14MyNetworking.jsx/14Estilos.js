@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-const estilos = StyleSheet.create({
+const estilo = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center",
@@ -28,4 +28,4 @@ const estilos = StyleSheet.create({
     movie: {flex:1,backgroundColor:"beige",alignItems:"center", justifyContent:"center"}
 })
 
-export default estilos
+export default estilo

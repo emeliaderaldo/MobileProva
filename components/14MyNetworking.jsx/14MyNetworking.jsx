@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { View, Text, StyleSheet, FlatList } from "react-native"
-import estilos from "./14Estilos"
+import estilo from "./14estilo"
 
 const MyNetworking =() => {
 
@@ -28,20 +28,20 @@ const MyNetworking =() => {
     }
 
     return (
-        <View style={estilos.container}>
-            <Text style={estilos.header}>{title}</Text>
-            <Text style={estilos.description}>{description}</Text>
+        <View style={estilo.container}>
+            <Text style={estilo.header}>{title}</Text>
+            <Text style={estilo.description}>{description}</Text>
 
             <FlatList
                 data={movies}
                 renderItem={
                     ({item}) => {
                         return(
-                            <View style={estilos.card}>
+                            <View style={estilo.card}>
                             <View style={{padding:20}}>
                                 <Text style={{fontSize:25,fontWeight:"bold"}}>{item.id}</Text>
                             </View>
-                            <View style={estilos.movie}>
+                            <View style={estilo.movie}>
                                 <Text style={{fontSize:20}}>{item.title}</Text>
                                 <Text style={{fontSize:20}}>{item.releaseYear}</Text>
                             </View>

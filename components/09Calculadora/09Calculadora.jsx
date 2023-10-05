@@ -1,5 +1,5 @@
 import {View, Text, TextInput, Button, Pressable} from "react-native"
-import estilos from "./CSS"
+import estilo from "./CSS"
 import { useState } from "react"
 
 const Calculadora = () => {
@@ -27,21 +27,21 @@ const Calculadora = () => {
     }
 
     return (
-        <View style={estilos.container}>
+        <View style={estilo.container}>
             <Text>Calculadora</Text>
             <TextInput
-                style={estilos.input}
+                style={estilo.input}
                 onChangeText={(numero)=>setNumber1(numero)}
                 keyboardType="numeric"
             />
 
             <TextInput
-                style={estilos.input}
+                style={estilo.input}
                 onChangeText={(numero)=>setNumber2(numero)}
                 keyboardType="numeric"
             />    
 
-            <View style={estilos.containerBotoes}>
+            <View style={estilo.containerBotoes}>
                 <Button title="SOMAR" onPress={somar}/>
                 <Button title="SUBTR" onPress={subtrair}/>
                 <Button title="MULTI" onPress={multiplicar}/>
@@ -64,7 +64,7 @@ const Calculadora = () => {
                 </Pressable>
             </View>
 
-            <Text style={[estilos.header,{marginTop:20}]}>
+            <Text style={[estilo.header,{marginTop:20}]}>
                 Resultado: {result}
             </Text>
                
@@ -72,7 +72,7 @@ const Calculadora = () => {
     )
 }
 
-// const estilos = StyleSheet.create({
+// const estilo = StyleSheet.create({
 //     container:{
 //         flex:1,
 //         flexDirection:"column",
