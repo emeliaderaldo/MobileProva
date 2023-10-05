@@ -1,4 +1,5 @@
 import { StyleSheet, View, Image} from "react-native";
+import Dados from "./components/Prova/questão01";
 // import Questao01 from "./components/01Tarefa/01questão";
 // import HelloRNV2 from "./components/02HelloRNV2";
 //import MyCat from "./components/03MyCat";
@@ -15,11 +16,12 @@ import { StyleSheet, View, Image} from "react-native";
 //import MainScreen from "./components/15Nagegation/15NavStack/MainScreen";
 //import Home from "./components/02Tarefa/01Home";
 //import MainScreen from "./components/atividade/MainScreen";
-import PokemonApp from "./components/16Pokemon/PokemonApp";
+//import PokemonApp from "./components/16Pokemon/PokemonApp";
+import Questao01 from "./components/Prova/questão01";
 
 export default function App() {
   return (
-    < PokemonApp/>
+    < Questao01/>
   );
 }
 
